@@ -35,7 +35,7 @@
         style="font-family: 'Grape Nuts', cursive; line-height: 5px"
         id="score"
         class="position-absolute top-0 start-100 translate-middle p-3 bg-warning text-dark fs-3 border border-warning rounded"
-      ></p>
+      >0</p>
       <div class="input-group mt-5">
         <input
           type="text"
@@ -44,7 +44,7 @@
           id="answer"
         />
         <div class="input-group-append">
-          <button class="btn btn-warning" type="button" id="submitAnswer" >
+          <button class="btn btn-warning" type="button" id="submitAnswer"  onclick="checkAnswer()">
             Submit
           </button>
           <button class="btn btn-primary" type="button" id="next">Next</button>
