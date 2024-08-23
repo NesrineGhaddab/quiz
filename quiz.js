@@ -16,5 +16,22 @@ let deathnote=new Question("A high school student who gains the powers of a deat
 let onepeace=new Question("A group of friends embark on an adventure to find a mysterious treasure.",
 "One Piece",2,"https://www.manga-news.com/public/images/pix/dvd/690/One-piece-anime-east-blue.jpg",
 "/assets/img/onePiece.png")
+let question=document.getElementById("question")
+let points=document.getElementById("score")
+let answer=document.getElementById("answer")
+let cover=document.getElementById("cover")
+let character=document.getElementById("character")
+let audioSHD=document.getElementById("youShD")
+let audioYES=document.getElementById("yes")
+let audioGUN=document.getElementById("gun")
 
 const quizQuestions = [naruto,deathnote,onepeace];
+ 
+let index=0
+let display=()=>{
+  question.innerHTML=quizQuestions[index].description
+  cover.src=quizQuestions[index].coverImg
+  character.src=quizQuestions[index].character
+}
+display()
+
